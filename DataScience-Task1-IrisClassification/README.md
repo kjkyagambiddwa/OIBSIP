@@ -32,7 +32,7 @@ DataScience-Task1-IrisClassification/
 6. Extended the analysis: retested the feature-selection trade-off (petal length + sepal width vs. petal length + petal width) across 40 random seeds to check whether the multicollinearity reasoning cost predictive accuracy.
 7. Repeated the 40-seed test with `StandardScaler` applied, to test the hypothesis that scaling would fix petal length's variance-driven dominance in distance/coefficient calculations.
 
-See [`Iris_Report.md`](./REPORT.md) for the full write-up, including all findings, tables, and reasoning behind each conclusion.
+See [`Iris_Report.md`](./Iris_Report.md) for the full write-up, including all findings, tables, and reasoning behind each conclusion.
 
 ## Results
 
