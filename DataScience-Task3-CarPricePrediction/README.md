@@ -34,7 +34,7 @@ DataScience-Task3-CarPricePrediction/
 6. Trained and hyperparameter-tuned a **Random Forest Regressor** (via `GridSearchCV`), validated across 40 random train/test splits and 10-fold cross-validation to confirm the result wasn't a lucky split.
 7. Evaluated every model with MAE, RMSE, and R², and interpreted the linear model's coefficients as percentage price effects.
 
-See [`REPORT.md`](./Car_Price_Prediction_Report.md) for the full write-up, including every diagnostic test's result, the final model's coefficients, and the reasoning behind each cleaning decision.
+See [`Car_Price_Prediction_Report.md`](./Car_Price_Prediction_Report.md) for the full write-up, including every diagnostic test's result, the final model's coefficients, and the reasoning behind each cleaning decision.
 
 ## Results
 
