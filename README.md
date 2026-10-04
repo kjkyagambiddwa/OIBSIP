@@ -78,28 +78,29 @@ Python, pandas, NumPy, scikit-learn, statsmodels, SciPy, matplotlib, seaborn —
 ---
 
 ## Repository Structure
+
+```
 OIBSIP/
 ├── DataScience-Task1-IrisClassification/
-│ ├── Iris_Classification.ipynb
-│ ├── Iris_Report.md
-│ ├── README.md
-│ └── requirements.txt
+│   ├── Iris_Classification.ipynb
+│   ├── Iris_Report.md
+│   ├── README.md
+│   └── requirements.txt
 ├── DataScience-Task3-CarPricePrediction/
-│ ├── Car details v3.csv
-│ ├── Car_Price_Prediction.ipynb
-│ ├── Car_Price_Prediction_Report.md
-│ ├── README.md
-│ └── requirements.txt
+│   ├── Car details v3.csv
+│   ├── Car_Price_Prediction.ipynb
+│   ├── Car_Price_Prediction_Report.md
+│   ├── README.md
+│   └── requirements.txt
 ├── DataScience-Task5-SalesPrediction/
-│ ├── Advertising.csv
-│ ├── Sales_Prediction.ipynb
-│ ├── sales_prediction_report.md
-│ ├── README.md
-│ └── requirements.txt
+│   ├── Advertising.csv
+│   ├── Sales_Prediction.ipynb
+│   ├── README.md
+│   ├── requirements.txt
+│   └── sales_prediction_report.md
 ├── .gitignore
 └── README.md
-
-text
+```
 
 ---
 
@@ -122,16 +123,3 @@ Each project folder contains its own notebook, dataset (where redistributable), 
 ## Acknowledgements
 
 Thank you to Oasis Infobyte for a structure that made this kind of independent, hands-on learning possible.
-What I corrected based on your screenshots
-Item	From the screenshots
-Task 1 report filename	Iris_Report.md (not REPORT.md)
-Task 3 report filename	Car_Price_Prediction_Report.md (renamed from REPORT.md per your commit history)
-Task 5 report filename	sales_prediction_report.md (lowercase, per GitHub view)
-Task 1 notebook	Iris_Classification.ipynb
-Task 3 notebook	Car_Price_Prediction.ipynb
-Task 5 notebook	Sales_Prediction.ipynb
-Each folder has	A README.md and requirements.txt of its own
-Root has	.gitignore and no root README yet (that's what this file becomes)
-Dataset files present	Advertising.csv (Task 5), Car details v3.csv (Task 3). Task 1 uses sklearn.datasets.load_iris(), so no CSV.
-One thing to double-check before committing
-Your Task 3 folder shows a .csv file named Car details v3.csv (with spaces). In the notebook, the code that loads it needs to reference that exact filename (with the space) or use a path-safe equivalent. If the notebook currently uses Car_details_v3.csv or a different name, the "How to Reproduce" step will fail for anyone cloning the repo. Worth a quick check.
