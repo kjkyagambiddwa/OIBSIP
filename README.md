@@ -1,0 +1,80 @@
+# OIBSIP — Data Science Internship
+
+**Author:** Kelly
+**Program:** Oasis Infobyte Summer Internship Program (OIBSIP)
+**Track:** Data Science
+
+---
+
+## Overview
+
+This repository contains the three projects completed for the Data Science track of the Oasis Infobyte Summer Internship Program. Each project folder includes a Jupyter notebook, a written analysis report, a requirements file, and a demo video link.
+
+The projects were chosen to cover a spread of core data science work: multi-class classification, regression with heavy data cleaning, and regression with feature selection and model comparison.
+
+---
+
+## Projects
+
+### Task 1 — Iris Flower Classification
+
+Classify iris flowers into one of three species (*setosa*, *versicolor*, *virginica*) from four physical measurements, and compare four classifiers (Logistic Regression, K-Nearest Neighbors, Decision Tree, Random Forest).
+
+**Highlights:**
+- Showed that a single train/test split can produce misleading ties; reran all models across 40 random seeds to get a stable ranking.
+- Tested the common assumption that feature scaling always helps. It did not. Scaling hurt Logistic Regression and KNN, while leaving tree-based models unchanged, because petal length's larger raw variance was correctly weighting the more informative feature.
+
+**Folder:** [`DataScience-Task1-IrisClassification`](./DataScience-Task1-IrisClassification)
+**Notebook:** `Iris_Classification.ipynb` · **Report:** `Iris_Report.md`
+
+---
+
+### Task 3 — Car Price Prediction
+
+Predict the selling price of a used car from features like brand, age, mileage, fuel type, transmission, and ownership history, using a real-world CarDekho listings dataset (8,128 raw rows).
+
+**Highlights:**
+- The bulk of the work was data cleaning: removing 1,202 exact duplicate listings, parsing unit-embedded text fields (`"23.4 kmpl"`, `"1248 CC"`, `"74 bhp"`), converting mixed torque units, and handling a zero-value mileage anomaly.
+- Compared an interpretable OLS model (with a full diagnostic pass: VIF, Durbin-Watson, Breusch-Pagan, Jarque-Bera, HC3 robust standard errors) against a Random Forest that predicted more accurately but offered less direct interpretability.
+
+**Folder:** [`DataScience-Task3-CarPricePrediction`](./DataScience-Task3-CarPricePrediction)
+**Notebook:** `Car_Price_Prediction.ipynb` · **Report:** `Car_Price_Prediction_Report.md`
+
+---
+
+### Task 5 — Sales Prediction
+
+Predict product sales from advertising expenditure across TV, Radio, and Newspaper channels, using the classic `Advertising.csv` dataset (200 observations).
+
+**Highlights:**
+- Progressed from a base linear model (R² 0.85) through a full polynomial + interaction model (R² 0.99), then used four feature-selection methods (Lasso, Ridge, Elastic Net, RFECV) to settle on a parsimonious 4-feature model.
+- All four feature-selection methods independently agreed: TV and Radio expenditure reinforce each other, while Newspaper expenditure adds no measurable value. That is a finding a marketing team can act on directly.
+
+**Folder:** [`DataScience-Task5-SalesPrediction`](./DataScience-Task5-SalesPrediction)
+**Notebook:** `Sales_Prediction.ipynb` · **Report:** `sales_prediction_report.md`
+
+---
+
+## Demo Videos
+
+Walkthroughs of each project are available as a YouTube playlist:
+
+https://youtube.com/playlist?list=PLf1KiZ-gFAYw
+
+---
+
+## What Tied the Three Together
+
+Across all three projects, the pattern was the same: **state the assumption, test it properly, and report what did not work as honestly as what did.**
+
+A model that scores well on one split is not proof of anything. A model that holds up across 40 seeds, survives its own diagnostic checks, and comes with an honest account of where it fails is the one worth trusting.
+
+---
+
+## Tech Stack
+
+Python, pandas, NumPy, scikit-learn, statsmodels, SciPy, matplotlib, seaborn — all work done in Jupyter Notebooks.
+
+---
+
+## Repository Structure
